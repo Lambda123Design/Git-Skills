@@ -10,6 +10,8 @@ Details my skills in Git
 
 **B) Git Merge, Push, Checkout and Log with commands**
 
+**C) Resolving Git Branch Merge Conflict**
+
 **A) Introduction, Installation and Basic Commands**
 
 1. Installed Git and opened Command Prompt, created a folder called "gittutorials", have a readme.md file, went inside that folder in command prompt, Initialized git using "git init"
@@ -160,3 +162,14 @@ git push origin main
 
 ### We will also see about Pull Request, and we can merge those branches too 
 
+**C) Resolving Git Branch Merge Conflict**
+
+**In Main Branch, Entire Code Repository will be there**
+
+In a project, Multiple Developers/Data Scientist working;
+
+Let's say developer A is developing a Story, he will checkout from the main branch, as it will have the entire code base repository; Once they do that they will work on their own stories **He will develop the entire module and merge to the main brnach; He will develop story and merge it**
+
+Developer B also want to work on his story too; So parallely he will also checkout from the main branch as it is the main code repository
+
+#### Developer A also would have made some changes in the codes and files; Same changes might have happened where developer B is also working; In this scenario there will be a conflict; Because Developer A might have done some 
