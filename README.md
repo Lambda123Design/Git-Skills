@@ -168,8 +168,106 @@ git push origin main
 
 In a project, Multiple Developers/Data Scientist working;
 
+Dev A will try to checkout a Branch to develop his own story/module
+
+Dev B also will try to checkout a Branch to develop his own story/module
+
+**They do because Main Branch has the entire code repository**
+
+**Say once Dev A completes his module he will return it to the Main Branch**
+
+When Dev B completes his module he also has to merge it to the main branch 
+
+####  Dev A might had lot of files, in the code and in the same file, some changes might have been done by Dev B
+
+#### In this situation there will be a "Conflict". Dev A might made some changes to File1, where Dev B might also done some changes to same File1
+
+#### When Dev B pushes his code, there will be a error saying that some conflict has occured
+
 Let's say developer A is developing a Story, he will checkout from the main branch, as it will have the entire code base repository; Once they do that they will work on their own stories **He will develop the entire module and merge to the main brnach; He will develop story and merge it**
 
 Developer B also want to work on his story too; So parallely he will also checkout from the main branch as it is the main code repository
 
 #### Developer A also would have made some changes in the codes and files; Same changes might have happened where developer B is also working; In this scenario there will be a conflict; Because Developer A might have done some 
+
+#### We will learn to Resolve Conflict, it is more about Resolving Conflict
+
+**1. Created a GitHub Repository;**
+
+**2. Created a "Git Merge Conflict" Folder in Local Windows and created "Dev A", "Dev B" folders inside it**
+
+#### Opened Command Prompt
+
+3. cd folder path; git clone "copy paste link from github repo"
+
+4. Went inside "Dev A and Dev B" both folders and cloned same repo from GitHub to solve conflict issues
+
+5. In Both Dev Folders we will do the coding and work and will try to see conflict
+
+6. Going to Application and typing "Git Branch" **It is a Main Branch**
+
+#### 7. Switching to developera branch using "git checkout developera"
+
+git status - No changes there
+
+#### 8. Going to Dev A Readme file and adding "Adding Dev A Story"
+
+9. Now if we see git status, we will see Readme file to be tracked
+
+10. git add. **(Krish Missed in his Video)**
+
+11. git commit -m "Developer A Story Changes"
+
+Seeing branch - git branch - developera
+
+#### 12. Checkout to the Main Branch so that we can get it merged to the developer A branch
+
+**git merge developera**
+
+13. git status - Nothing is there; git branch - It is Main Branch
+
+#### After Developer A completes his own Story, he has to push it to the main branch 
+
+#### Now we just merged Developer A branch to the Main Branch; Now we will push this Main Branch to the Main Repository
+
+#### 14. git push origin main
+
+#### If we go and see in Github, we can see that 2 commits, Update Application and adding Developer A Story 
+
+#### Developer B might also be working on the same branch
+
+#### Changes has gone to the main repository over here; Before that only main copy is taken by Dev B
+
+#### 15. Creating a new branch "git branch developerb"; git checkout developerb 
+
+#### Making changes in Dev B Readme File; "Updated Application Dev B"
+
+#### 16. git status; One change will be there; git add .; git commit -m "Developer B Commit"
+
+git status, nothing will be there
+
+#### 17. Going to the main branch; git checkout main
+
+#### 18. Merging Developer and Main Branch; git merge developerb 
+
+#### We have to push it to the main branch; But Developer A has already pushed some changes over there; Let's see if we are getting any error
+
+#### 19. git push origin main -- We got Error
+
+#### 20. git pull - We see conflict because Developer A pushed some file to the main branch over the same file 
+
+#### We have to do changes to the file (Readme.txt) manually before pushing to Main Branch 
+
+#### We have to do this conflict seriously, because when coding in bigger files, there might be functions or modules that may be integrated or there may be changes in previous function of the module; We need to merge that conflict in a very proper way; Otherwise it is a complete mess
+
+#### If not, we would just overwrite others code 
+
+#### Once merging is done;
+
+#### 21. git status; git add ., git status; git commit -m "Developer B Story" 
+
+#### 22. git push origin main; It will work now 
+
+#### If we go and see GitHub Repository it will work 
+
+#### This conflict issue will happen when working in a bigger team, because parallel stories will get implemented by many developers
