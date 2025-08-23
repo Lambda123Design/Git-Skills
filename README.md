@@ -2,6 +2,8 @@
 
 Details my skills in Git
 
+### git init, set the main branch, connect local to GitHub Repository, git add. (Adds all files expect files in .gitignore), git commit -m "This is my first commit", git push origin main
+
 #### If we see, git status now, it will show "modified"; If we feel modification is correct, we can use "git add filename"; If need to restore previous version "git restore filename"
 
 #### We made changes to both the files and to make sure that both are tracked we use "git add ." 
