@@ -2,7 +2,7 @@
 
 Details my skills in Git
 
-## Basic Set of Commands to commit from Local to Github Repository - git init, git remote add origin repository_name, git add . (Adding files to Staging), git commit -m "Commit Name" (Commit the changes), git branch -M main (Setting name for Main Branch), git push -u origin main (Push to Main Branch) ; git remote set-url origin new_repository_name (To set New Repository connected to VS Code)
+## Basic Set of Commands to commit from Local to Github Repository - git init, git remote add origin repository_name, git add . (Adding files to Staging), git commit -m "Commit Name" (Commit the changes), git branch -M main (Setting name for Main Branch), git push -u origin main (Push to Main Branch) ; git remote set-url origin new_repository_name (To set New Repository connected to VS Code); git pull --rebase origin main(Pulling to rebase, say for example, when readme file is created and it is not connected to Local)
 
 ### git init, set the main branch, connect local to GitHub Repository, git add. (Adds all files expect files in .gitignore), git commit -m "This is my first commit", git push origin main
 
